@@ -1,0 +1,362 @@
+html {
+   width: 100%;
+   overflow: scroll;
+   overflow-x: hidden;
+}
+
+body {
+    background-color: whitesmoke;
+}
+body ul li{
+    list-style: none;
+    padding: 0px;
+}
+
+body a{
+    text-decoration: none;
+}
+#corp_page{
+    height: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+container-fluid{
+    z-index: 1;
+}
+.container-fluid {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+h2{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+/*____________________RIGHT________________________________________*/
+#right{
+    background-color: #d63146;
+    min-height: 800px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#right h2{
+    color: white;
+    border-bottom: 0.3px solid white;
+
+}
+
+#site_ressources {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-top: 2px solid #000000;
+}
+
+#post_recents , #new_topic{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#new_topic{
+    border-top: 2px solid #000000;
+}
+
+#post_recents, #new_topic, #site_ressources{
+    height: 270px;
+   }
+
+#post_recents p, #new_topic p, #site_ressources a{
+    font-size: 15px;
+    text-align: center;
+    height: 50px;
+    border-bottom: 1px solid white;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    color: #000000;
+}
+
+#post_recents p:hover{
+font-size: 15px;
+background-color: white;
+color: #000000;
+border-radius: 8px;
+font-weight: bold;
+}
+
+#new_topic p:hover{
+font-size: 15px;
+text-decoration: none;
+background-color: white;
+color: #000000;
+border-radius: 8px;
+font-weight: bold;
+}
+
+#site_ressources a:hover{
+font-size: 20px;
+text-decoration: none;
+background-color: white;
+color: #000000;
+border-radius: 8px;
+font-weight: bold;
+}
+
+/*
+_____________________SCROLLBAR________________________________
+*/
+
+html::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+html::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+html::-webkit-scrollbar-thumb
+{
+}
+
+
+/*______________________________________________________*/
+#site_ressources::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#site_ressources::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+#site_ressources::-webkit-scrollbar-thumb
+{
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #000000;
+}
+
+#new_topic::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    background-color: #F5F5F5;
+}
+
+#new_topic::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+#new_topic::-webkit-scrollbar-thumb
+{
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #000000;
+}
+
+#post_recents::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#post_recents::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+#post_recents::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #000000;
+}
+
+/*___________END_SCROLLBAR____________________________________*/
+
+/*______________TEXT_TOPIC_______________________________________*/
+
+#principalTopic{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+#principalTopic{
+    width: 100%;
+text-align: center;
+    display: inline-block;
+}
+
+#principalTopic .titre a{
+    display: inline-block;
+}
+
+
+#principalTopic table{
+    background-color: #d63146; 
+    width: 100%;
+}
+
+#principalTopic th {
+    height: 20px;
+    font-size: 20px;
+    border-bottom: 1px solid #000000;
+    color: white;
+    padding-left: 0.8%;
+    text-align: center;
+}
+
+#principalTopic tr {
+    height: 20px;
+    font-size: 18px;
+    border-bottom: 1px solid #000000;
+   
+}
+#principalTopic td { 
+    height: 50px;
+    padding-left: 0.8%;
+    background-color: whitesmoke;
+ }
+
+.reponse p{
+    color: rgba(255,255,255, 1);
+
+    background-color:rgba(214, 49, 70, 0.7);
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 8%;
+    padding: 4%;
+    text-align: left;
+}
+
+.reponseFirst p{
+    color: rgba(255,255,255, 1);
+    background-color: rgba(0, 102, 153, 0.9);
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 8%;
+    padding: 4%;
+    text-align: left;
+}
+
+#principalTopic .btn{
+    width: 25%;
+    color: white;
+    background-color: #d63146;
+    border-color: white;
+    display: inline-block;
+    margin-top: 2%;
+}
+
+#principalTopic .btn:hover{
+    color:#000000;
+    background-color: white;
+    border-color:#d63146;
+    border-width: 1px;
+}
+
+
+/*_____________END_TEXT_TOPIC_______________________________________*/
+
+/*____________REPONSE____________________________________*/
+
+
+#principalReception{
+    width: 100%;
+text-align: center;
+    display: inline-block;
+}
+
+#principalReception .titre a{
+    display: inline-block;
+}
+
+#principalReception .btn{
+    width: 25%;
+    color: white;
+    background-color: #d63146;
+    border-color: white;
+}
+#principalReception .btn:hover{
+    color:#000000;
+    background-color: white;
+    border-color:#d63146;
+    border-width: 1px;
+}
+#principalReception a{
+    text-decoration: none;
+    color: #000000;
+}
+#principalReception .content{
+    margin :1%;
+}
+
+#principalReception table{
+    background-color: #d63146; 
+    width: 100%;
+}
+
+#principalReception th {
+    height: 70px;
+    font-size: 20px;
+    border-bottom: 1px solid #000000;
+    color: white;
+    padding-left: 0.8%;
+}
+
+#principalReception tr {
+    height: 40px;
+    font-size: 18px;
+    border-bottom: 1px solid #000000;
+   
+}
+#principalReception td { 
+    padding-left: 0.8%;
+    background-color: whitesmoke;
+ }
+
+#principalReception .table_message{
+    width: 70%;
+}
+
+#principalReception .tableAuteur{
+    width: 15%;
+}
+#principalReception .tableAuteur, #principalReception .tableDate{
+    border-left: 1px solid #000000;
+    text-align: center;
+}
+
+#principalReception .tableAuteur p{
+color: #d63146;
+font-size: 22px;
+}
+
+#principalReception .table_message p{
+    color: rgba(0,0,0, 1);
+background-color:rgba(214, 49, 70, 0.7);
+font-size: 18px;
+border-radius: 10px;
+margin: 0.8%;
+padding: 0.8%;
+text-align: left;
+}
+
+
+
+

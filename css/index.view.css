@@ -1,0 +1,326 @@
+html {
+   width: 100%;
+   overflow: scroll;
+   overflow-x: hidden;
+}
+body {
+    background-color: whitesmoke;
+}
+body ul li{
+	list-style: none;
+	padding: 0px;
+}
+
+body a{
+	text-decoration: none;
+}
+#corp_page{
+	height: 100%;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+container-fluid{
+	z-index: 1;
+}
+.container-fluid {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+h2{
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+/*____________________RIGHT________________________________________*/
+#right{
+	background-color: #d63146;
+	min-height: 800px;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+#right h2{
+	color: white;
+	border-bottom: 0.3px solid white;
+
+}
+
+#site_ressources {
+   	overflow-y: scroll;
+	overflow-x: hidden;
+    border-top: 2px solid #000000;
+}
+
+#post_recents , #new_topic{
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+#new_topic{
+    border-top: 2px solid #000000;
+}
+
+#post_recents, #new_topic, #site_ressources{
+	height: 270px;
+}
+
+#post_recents p, #new_topic p, #site_ressources a{
+	font-size: 15px;
+	text-align: center;
+	height: 50px;
+	border-bottom: 1px solid white;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    color: #000000;
+}
+
+#post_recents p:hover{
+font-size: 15px;
+background-color: white;
+color: #000000;
+border-radius: 8px;
+font-weight: bold;
+}
+
+#new_topic p:hover{
+font-size: 15px;
+text-decoration: none;
+background-color: white;
+color: #000000;
+border-radius: 8px;
+font-weight: bold;
+}
+
+#site_ressources a:hover{
+font-size: 20px;
+text-decoration: none;
+background-color: white;
+color: #000000;
+border-radius: 8px;
+font-weight: bold;
+}
+
+/*
+_____________________SCROLLBAR________________________________
+*/
+
+
+html::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+html::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+html::-webkit-scrollbar-thumb
+{
+}
+
+
+/*______________________________________________________*/
+#site_ressources::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#site_ressources::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#site_ressources::-webkit-scrollbar-thumb
+{
+	border-radius: 20px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #000000;
+}
+
+#new_topic::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 20px;
+	background-color: #F5F5F5;
+}
+
+#new_topic::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#new_topic::-webkit-scrollbar-thumb
+{
+	border-radius: 20px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #000000;
+}
+
+#post_recents::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#post_recents::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#post_recents::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #000000;
+}
+
+/*___________END_SCROLLBAR____________________________________*/
+
+/*___________LEFT____________________________________*/
+
+#news, #principal{
+	width: 100%;
+	height: auto;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+#listes_topic ul {
+	font-size: 20px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+}
+
+#listes_topic ul li a{
+	vertical-align: center;
+	height: 50px;
+	border-top: 1px solid black;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    color: #d63146;
+}
+
+#listes_topic ul li a:hover{
+	text-decoration: none;
+	background-color: #d63146;
+	color: white;
+	border-radius: 8px;
+	font-weight: bold;
+}
+
+.article_news p{
+	font-size: 20px;
+	text-align: center;
+	height: 50px;
+	border-bottom: 1px solid black;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    color: #000000;
+}
+
+.article_news p:hover{
+font-size: 20px;
+text-decoration: none;
+background-color: #d63146;
+color: white;
+border-radius: 8px;
+font-weight: bold;
+}
+
+
+
+
+
+
+
+.erreur {
+	font-size: 15px;
+	color: red;
+}
+.validate {
+	font-size: 15px;
+	color: green;
+}
+
+
+/*_______________CONNEXION___________________________*/
+#principalCo{
+	width: 100%; 
+	min-height:80%; 
+	margin: 0px;
+	text-align: center;
+}
+
+#corp_pageCo
+{
+	min-height: 600px;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+form{
+	width: 400px; height: 200px;
+	background-color: #d63146;
+	text-align: center;
+	display: inline-block;
+}
+
+.form{
+	display: inline-block;
+	width: 200px;
+}
+
+label, .btn{
+	width:100%;
+	text-align: center;
+	margin-top: 5%;
+	color: white;
+	font-size: 16px;
+}
+
+input{
+	width:100%;
+	text-align: center;
+}
+
+.btn{
+	background-color: #d63146;
+	border-color: white;
+}
+.btn:hover{
+	color:#d63146;
+	background-color: white;
+	border-color:white;
+}
+/*_______________END_CONNEXION___________________________*/
+
+/*_______________INSCRIPTION___________________________*/
+
+.inscription {
+	width: 400px;
+	height: 425px;
+	background-color: #d63146;
+	text-align: center;
+	display: inline-block;
+}
+
+.formIns{
+	display: inline-block;
+	width: 200px;
+}
