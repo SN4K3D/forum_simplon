@@ -54,8 +54,8 @@
 						</div>
 						<div class="col-md-6">
 							<label for="genre">Genre :</label><br>
-							<input type="radio" name="gender" value="male" checked /> Femme
- 							<input type="radio" name="gender" value="female" /> Homme
+							<input type="radio" name="gender" value="Femme"  /> Femme
+ 							<input type="radio" name="gender" value="Homme" /> Homme
  							<input type="radio" name="gender" value="other" /> Autre				
 						</div>
 					</div>

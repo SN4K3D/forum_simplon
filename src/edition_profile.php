@@ -109,6 +109,16 @@ if(isset($_GET['id']) && $_GET['id'] > 0 && isset($_SESSION['id']) AND $_GET['id
 			header('Location: profile.php?id='.$_SESSION['id']);
 			
 		}
+		
+		if(isset($_POST['gender']) && !empty($_POST['gender']) AND $_POST['gender'] != $user['User_Genre'])
+		{
+			$gender = htmlspecialchars($_POST['gender']);
+			$insert_Int = $bdd->prepare("UPDATE user SET User_Genre = ? WHERE User_id = ?");
+			$insert_Int->execute(array($gender, $_SESSION['id']));
+			header('Location: profile.php?id='.$_SESSION['id']);
+			
+		}
+
 
 		if(isset($_POST['new_mail']) && !empty($_POST['new_mail']) AND $_POST['new_mail'] != $user['User_Email'])
 		{

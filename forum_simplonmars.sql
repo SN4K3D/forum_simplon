@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le :  jeu. 12 juil. 2018 à 23:33
+-- Généré le :  ven. 13 juil. 2018 à 11:03
 -- Version du serveur :  10.1.33-MariaDB
 -- Version de PHP :  7.2.6
 
@@ -353,7 +353,7 @@ CREATE TABLE `user` (
   `User_Password` text CHARACTER SET utf8mb4,
   `User_Birthday` date DEFAULT NULL,
   `User_Type` int(11) DEFAULT NULL,
-  `User_Genre` int(11) DEFAULT NULL,
+  `User_Genre` varchar(20) DEFAULT NULL,
   `User_Location` text CHARACTER SET utf8mb4 NOT NULL,
   `Pays` varchar(20) NOT NULL,
   `Region` varchar(20) NOT NULL,
@@ -375,10 +375,11 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`User_id`, `User_Pseudo`, `User_Nom`, `User_Prenom`, `User_Email`, `User_Password`, `User_Birthday`, `User_Type`, `User_Genre`, `User_Location`, `Pays`, `Region`, `User_Interest`, `User_Date_Inscription`, `User_Nbr_Message`, `User_Last_Connection`, `User_ip`, `User_LastPost`, `User_Group_id`, `User_last_search`, `User_posts`, `User_WebSite`, `User_NewPassWord`) VALUES
-(5, 'Snake', 'JOLIVET', 'Romain', 'novixjo@hotmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', '1992-02-28', NULL, NULL, '18 rue des pergolas', '1992-02-28', '13127  ', 'WOW', NULL, NULL, NULL, '', 0, 0, 0, 0, 'cvjolivet.000webhostapp.com', 0),
+(5, 'Snakes', 'JOLIVET', 'Romain', 'novixjo@hotmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', '1992-02-28', NULL, 'Femme', '18 rue des pergolas', '1992-02-28', '13127  ', 'WOW', NULL, NULL, NULL, '', 0, 0, 0, 0, 'cvjolivet.000webhostapp.com', 0),
 (6, 'regis', NULL, NULL, 'regis@aha.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', NULL, NULL, NULL, '', '', '', NULL, NULL, NULL, NULL, '', 0, 0, 0, 0, '0', 0),
 (7, 'marine', NULL, NULL, 'bla@mail.com', '7b52009b64fd0a2a49e6d8a939753077792b0554', NULL, NULL, NULL, '', '', '', NULL, NULL, NULL, NULL, '', 0, 0, 0, 0, '0', 0),
-(9, 'manonnoblet', NULL, NULL, 'manon@mail.com', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', NULL, NULL, NULL, '', '', '', NULL, NULL, NULL, NULL, '', 0, 0, 0, 0, '0', 0);
+(9, 'manonnoblet', NULL, NULL, 'manon@mail.com', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', NULL, NULL, NULL, '', '', '', NULL, NULL, NULL, NULL, '', 0, 0, 0, 0, '0', 0),
+(10, 'fab', NULL, NULL, 'aha@mail.com', 'fb96549631c835eb239cd614cc6b5cb7d295121a', NULL, NULL, NULL, '', '', '', NULL, NULL, NULL, NULL, '', 0, 0, 0, 0, '', 0);
 
 -- --------------------------------------------------------
 
@@ -494,7 +495,7 @@ ALTER TABLE `topics_posted`
 -- AUTO_INCREMENT pour la table `user`
 --
 ALTER TABLE `user`
-  MODIFY `User_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `User_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
