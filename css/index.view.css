@@ -55,7 +55,7 @@ h2{
 }
 
 #post_recents , #new_topic{
-	overflow-y: hidden;
+	overflow-y: scroll;
 	overflow-x: hidden;
 }
 
