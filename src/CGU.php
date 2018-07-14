@@ -3,14 +3,14 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>Forum Simplonien</title>
-	<link rel="icon" type="image/png" href="../images/icone_onglet.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="../images/logo.png" sizes="16x16" />
 	<!----------------- MARINE --------------- -->
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:600" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:600" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
     	<!----------------- MARINE --------------- -->
 
-	<link rel="stylesheet" type="text/css" href="../css/CGU.css">
+	<link rel="stylesheet" type="text/css" href="../css/CGU.css" />
 
 </head>
 <body>
@@ -99,27 +99,7 @@ Les CGU constituent un contrat entre SIMPLDISCUSS.IO et l’Utilisateur du Site.
                 <h2 class="title">Dernière mise à jour éffectuée le : 4/07/2018</h2>
 		</div>
             
-		<div id="right">
-			<div id="post_recents">
-				<h2 class="border">Post récents</h2>
-				<p><!-- <?= $dernier_post ?> -->post recent</p>
-				<p><!-- <?= $dernier_post ?> -->post recent</p>
-			</div>
-			<div id="new_topic">
-				<h2 class="border">Nouveaux sujets</h2>
-				<p><!-- <?= $dernier_sujet ?> -->blabla</p>
-				<p><!-- <?= $dernier_sujet ?> -->blabla</p>
-			</div>
-				<div id="site_ressources">
-					<h2 class="border">Sites incontournables</h2>
-					<ul>
-						<li><a href="">mon site</a></li>
-						<li><a href="">mon site</a></li>
-						<li><a href="">mon site</a></li>
-						<li><a href="">mon site</a></li>
-					</ul>
-			</div>
-		</div>
+		
 	</div>
    
     

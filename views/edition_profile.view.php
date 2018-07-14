@@ -29,7 +29,7 @@
 					<div class="row Pseudo">
 						<div class="col-md-4">
 							<label for="pseudo">Pseudo :</label>
-							<input class="form-control input-sm" id="pseudo" type="text" name="new_pseudo" placeholder="Pseudo" value="<?= $user['User_Pseudo']; ?>" />
+							<input class="form-control input-sm" id="pseudo" type="text" maxlength="25" name="new_pseudo" placeholder="Pseudo" value="<?= $user['User_Pseudo']; ?>" />
 						</div>
 						<div class="col-md-4">
 							<label for="nom">Nom :</label>
