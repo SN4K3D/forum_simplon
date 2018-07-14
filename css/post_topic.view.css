@@ -318,9 +318,11 @@ input{
 
 .erreur {
     color: red;
+    font-size: 20px;
 }
 .validate {
     color: green;
+    font-size: 20px;
 }
 
 /*__________________________REPONSE_TOPIC__________________________*/

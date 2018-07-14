@@ -28,6 +28,6 @@ if(isset($_POST['form_connexion']))
 	else 
 		$erreur = "Tout les champs doivent être complétés correctement !";
 }	
-
+$page_connexion = true;
 include ("../views/connexion.view.php");
 ?>

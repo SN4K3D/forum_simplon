@@ -187,11 +187,11 @@ html::-webkit-scrollbar-thumb
 
 /*___________END_SCROLLBAR____________________________________*/
 .erreur {
-	font-size: 15px;
+	font-size: 25px;
 	color: red;
 }
 .validate {
-	font-size: 15px;
+	font-size: 20px;
 	color: green;
 }
 
@@ -293,6 +293,6 @@ html::-webkit-scrollbar-thumb
 }
 
 .erreur {
-	font-size: 15px;
+	font-size: 25px;
 	color: red;
 }

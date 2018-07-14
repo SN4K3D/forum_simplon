@@ -8,6 +8,16 @@
     height: 100px;  
 }
 
+.pied_connexion {
+    background-color: #2b2b2b;
+    position: absolute;
+    width: 100%;   
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;  
+}
+
 .copyr {
     font-family: 'Ubuntu', sans-serif;
     float: right;

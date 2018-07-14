@@ -6,7 +6,7 @@
 
 	<?php include('../include/include.php'); ?>
 	
-	<link rel="stylesheet" type="text/css" href="../css/index.view.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.view.css" />
 
 </head>
 <body>

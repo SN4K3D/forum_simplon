@@ -1,5 +1,3 @@
-
-
 html {
    width: 100%;
    height: 100%;
@@ -253,7 +251,7 @@ font-weight: bold;
 
 
 .erreur {
-	font-size: 15px;
+	font-size: 25px;
 	color: red;
 }
 .validate {
@@ -264,9 +262,10 @@ font-weight: bold;
 
 /*_______________CONNEXION___________________________*/
 #principalCo{
-	width: 100%; 
-	min-height:80%; 
+	width: 100%;
+	min-height:80%;
 	margin: 0px;
+	margin-bottom: ;
 	text-align: center;
 }
 
