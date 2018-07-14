@@ -19,18 +19,25 @@ if(isset($_SESSION['id']))
 					if(strlen($sujet) <= 70)
 					{
 						require('../include/connexion_bdd.php');
-
-						$verif_categorie = $bdd->prepare("SELECT * FROM topics WHERE topic_id = ? ");
-						$verif_categorie->execute(array($categorie));
-						$verif_categorie = $verif_categorie->rowCount();
-						if($verif_categorie)
+						$verif_sujet = $bdd->prepare("SELECT * FROM topics_posted WHERE sujet = ?");
+						$verif_sujet->execute(array($sujet));
+						$verif_sujet = $verif_sujet->rowCount();
+						if(!$verif_sujet)
 						{
-							$req_topic = $bdd->prepare("INSERT INTO topics_posted (categorie, sujet, text, auteur, post_time) VALUES (?,?,?,?,NOW())");
-							$req_topic->execute(array($categorie,$sujet, $text, $_SESSION['id']));
-							$validate = "Sucess votre sujet a bien été posté !";
+							$verif_categorie = $bdd->prepare("SELECT * FROM topics WHERE topic_id = ? ");
+							$verif_categorie->execute(array($categorie));
+							$verif_categorie = $verif_categorie->rowCount();
+							if($verif_categorie)
+							{
+								$req_topic = $bdd->prepare("INSERT INTO topics_posted (categorie, sujet, text, auteur, post_time) VALUES (?,?,?,?,NOW())");
+								$req_topic->execute(array($categorie,$sujet, $text, $_SESSION['id']));
+								$validate = "Sucess votre sujet a bien été posté !";
+							}
+							else
+								$erreur = "Catégorie invalide !";
 						}
 						else
-							$erreur = "Catégorie invalide !";
+							$erreur = "Sujet deja existant !";
 					}
 					else
 						$erreur = "Votre sujet est trop long !";

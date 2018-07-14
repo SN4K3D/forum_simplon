@@ -24,13 +24,13 @@
 					elseif(isset($validate))
 						echo '<p class="validate">'.$validate.'</p>';
 			  ?>
-			<form method="POST" action="">
+			<form method="POST" >
 				<div class="form">
 					<label for="mail">Mail</label>
 					<input class="form-control" id="mail" type="email" name="mail" placeholder="Votre eMail"/>
 					<label for="password">Mot de passe</label>
 					<input class="form-control" id="password" type="password" name="password" placeholder="Mot de passe" />
-					<input class="btn btn-primary btn-block" type="submit" name="form_connexion" value="Connexion">
+					<input class="btn btn-primary btn-block" type="submit" name="form_connexion" value="Connexion" />
 				</div>
 			</form>
 		</div>
